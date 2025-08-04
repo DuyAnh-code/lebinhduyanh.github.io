@@ -1,94 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Lê Bình Duy Anh</title>
+    <title>Portfolio - Sinh viên</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">Lê Bình Duy Anh</h1>
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="#about">Giới thiệu</a></li>
-                    <li><a href="#projects">Dự án</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Thông tin</a></li>
+                <li><a href="#timeline">Học tập & Hoạt động</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <!-- Ảnh đại diện: chỉnh sửa đường dẫn ảnh trong style.css để thay đổi thành ảnh của bạn -->
-            <div class="profile-pic"></div>
-            <h2 class="hero-name">Lê Bình Duy Anh</h2>
-            <p class="tagline">Đam mê công nghệ & không ngừng học hỏi</p>
-            <p class="hero-intro">Chào mừng bạn đến với trang portfolio cá nhân của mình. Đây là nơi mình chia sẻ thông tin về bản thân, những dự án đã thực hiện và cách liên hệ.</p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn">Xem dự án</a>
-                <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+    <!-- Trang chủ -->
+    <section id="home" class="hero">
+        <div class="avatar-wrapper">
+            <img src="images/avatar.jpg" alt="Ảnh đại diện">
+        </div>
+        <h1>Lê Bình Duy Anh</h1>
+        <p>Sinh viên Công nghệ Thông tin - Đại học Đà Lạt</p>
+    </section>
+    
+    <!-- Thông tin -->
+    <section id="about" class="section">
+        <h2>Thông tin</h2>
+        <div class="personal-info">
+            <div class="info-box">
+                <div class="info-icon"><i class="fas fa-birthday-cake"></i></div>
+                <div>
+                    <h4>NGÀY SINH</h4>
+                    <p>25/08/2003</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                <div>
+                    <h4>CÔNG VIỆC HIỆN TẠI</h4>
+                    <p>Sinh viên tại Đại học Đà Lạt</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                    <h4>EMAIL</h4>
+                    <p>renbi1204@gmail.com</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-icon"><i class="fas fa-comment"></i></div>
+                <div>
+                    <h4>ZALO</h4>
+                    <p>0798811749</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kết nối Zalo -->
+        <div id="zalo-connect">
+            <h3>Kết nối ngay qua Zalo</h3>
+            <div class="zalo-container">
+                <div class="qr-box">
+                    <img src="images/zalo-qr.png" alt="Zalo QR" class="qr-img">
+                </div>
+                <div class="zalo-info">
+                    <h4>Zalo Chat</h4>
+                    <p>Duy Anh</p>
+                    <ol>
+                        <li>Mở ứng dụng Zalo</li>
+                        <li>Chọn "Quét mã QR"</li>
+                        <li>Hướng camera vào mã QR</li>
+                    </ol>
+                    <div class="zalo-buttons">
+                        <a href="images/zalo-qr.png" download class="btn">Tải xuống QR</a>
+                        <a href="https://zalo.me/0798811749" target="_blank" class="btn">Mở Zalo</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>Về tôi</h2>
-            <p>
-                Hiện tại mình là sinh viên CTK46 đang theo học lập trình .NET Core và phát triển web full‑stack. Mình đam mê xây dựng những website đẹp, hữu dụng và luôn muốn khám phá công nghệ mới. Trang web này là nơi mình giới thiệu những gì đã học và các dự án mình đã thực hiện.
-            </p>
-            <p>
-                Hãy xem qua các dự án bên dưới. Mình luôn sẵn sàng hợp tác và tìm kiếm những cơ hội mới.
-            </p>
-        </div>
+    <!-- Học tập & Hoạt động -->
+    <section id="timeline" class="section">
+        <h2>Học tập & Hoạt động</h2>
+        <ul class="timeline">
+            <li><span>2022 - Nay</span> Sinh viên ngành CNTT - Đại học Đà Lạt</li>
+            <li><span>2023</span> Thành viên CLB Lập trình</li>
+        </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Dự án</h2>
-            <div class="project-list">
-                <article class="project-item">
-                    <h3>Website Blog Demo</h3>
-                    <p>Một website blog đơn giản được xây dựng bằng .NET Core MVC. Chức năng bao gồm bài viết lấy từ cơ sở dữ liệu, thiết kế đáp ứng và triển khai trên các nền tảng miễn phí như Vercel và GitHub Pages.</p>
-                    <a href="#" class="project-link">Xem chi tiết</a>
-                </article>
-                <article class="project-item">
-                    <h3>Mẫu Portfolio</h3>
-                    <p>Mẫu portfolio này được tạo hoàn toàn bằng HTML và CSS từ đầu. Nó minh họa cách tổ chức một trang portfolio một trang và có thể tùy biến cho dự án của bạn.</p>
-                    <a href="#" class="project-link">Xem chi tiết</a>
-                </article>
-                <article class="project-item">
-                    <h3>Thực hành Entity Framework</h3>
-                    <p>Một bài thực hành minh họa cách sử dụng Entity Framework trong ứng dụng .NET Core để tương tác với cơ sở dữ liệu SQL. Bao gồm chức năng CRUD và thiết kế mô hình.</p>
-                    <a href="#" class="project-link">Xem chi tiết</a>
-                </article>
+    <!-- Dự án -->
+    <section id="projects" class="section">
+        <h2>Dự án cá nhân</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Website Portfolio</h3>
+                <p>Trang web cá nhân giới thiệu bản thân và dự án.</p>
+            </div>
+            <div class="project-card">
+                <h3>Ứng dụng Quản lý Ghi chú</h3>
+                <p>App ghi chú đơn giản viết bằng JavaScript thuần.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Liên hệ</h2>
-            <p>Bạn có hứng thú hợp tác hoặc có câu hỏi? Hãy gửi email cho mình hoặc kết nối qua các nền tảng bên dưới.</p>
-            <ul class="contact-info">
-                <li>Email: <a href="mailto:example@example.com">example@example.com</a></li>
-                <li>Discord: <a href="https://discord.gg/6CqkT2AGGr">Cộng đồng Discord</a></li>
-                <li>Khoá học LMS: <a href="https://lms.dlu.edu.vn/course/view.php?id=12240">CTK46 Course</a></li>
-            </ul>
+    <!-- Kỹ năng -->
+    <section id="skills" class="section">
+        <h2>Kỹ năng</h2>
+        <ul class="skills-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java</li>
+            <li>Git, GitHub</li>
+            <li>Tiếng Anh giao tiếp</li>
+        </ul>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="contact" class="section contact">
+        <h2>Liên hệ</h2>
+        <p>Email: <a href="mailto:renbi1204@gmail.com">renbi1204@gmail.com</a></p>
+        <p>Điện thoại: 0798811749</p>
+        <div class="social-links">
+            <a href="https://www.github.com/DuyAnh-code" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/map.2508" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dii.enggg/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </section>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Lê Bình Duy Anh. All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <p>© 2025 Lê Bình Duy Anh. All rights reserved.</p>
     </footer>
 </body>
 </html>
