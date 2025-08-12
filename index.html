@@ -3,85 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Sinh viên</title>
+    <title>Portfolio - Lê Bình Duy Anh</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
     <header class="site-header">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#about">Thông tin</a></li>
-                <li><a href="#timeline">Học tập & Hoạt động</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#skills">Kỹ năng</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Thông tin</a></li>
+                    <li><a href="#timeline">Học tập</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Trang chủ -->
     <section id="home" class="hero">
         <div class="avatar-wrapper">
-            <img src="images/avatar.jpg" alt="Ảnh đại diện">
+            <img src="images/avatar.jpg" alt="Ảnh đại diện" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMzMzIiByeD0iMTAwIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzY2NiIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTUwIiByeD0iNDAiIHJ5PSIzMCIgZmlsbD0iIzY2NiIvPgo8L3N2Zz4='">
         </div>
         <h1>Lê Bình Duy Anh</h1>
         <p>Sinh viên Công nghệ Thông tin - Đại học Đà Lạt</p>
     </section>
     
     <!-- Thông tin -->
-    <section id="about" class="section">
-        <h2>Thông tin</h2>
+    <section id="about" class="section fade-in">
+        <h2>Thông tin cá nhân</h2>
         <div class="personal-info">
             <div class="info-box">
-                <div class="info-icon"><i class="fas fa-birthday-cake"></i></div>
+                <div class="info-icon">
+                    <i class="fas fa-birthday-cake"></i>
+                </div>
                 <div>
-                    <h4>NGÀY SINH</h4>
+                    <h4>Ngày sinh</h4>
                     <p>25/08/2003</p>
                 </div>
             </div>
             <div class="info-box">
-                <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="info-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
                 <div>
-                    <h4>CÔNG VIỆC HIỆN TẠI</h4>
-                    <p>Sinh viên tại Đại học Đà Lạt</p>
+                    <h4>Trình độ hiện tại</h4>
+                    <p>Sinh viên Đại học Đà Lạt</p>
                 </div>
             </div>
             <div class="info-box">
-                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
                 <div>
-                    <h4>EMAIL</h4>
+                    <h4>Email</h4>
                     <p>renbi1204@gmail.com</p>
                 </div>
             </div>
             <div class="info-box">
-                <div class="info-icon"><i class="fas fa-comment"></i></div>
+                <div class="info-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
                 <div>
-                    <h4>ZALO</h4>
+                    <h4>Zalo</h4>
                     <p>0798811749</p>
                 </div>
             </div>
         </div>
 
         <!-- Kết nối Zalo -->
-        <div id="zalo-connect">
-            <h3>Kết nối ngay qua Zalo</h3>
+        <div class="zalo-connect">
+            <h3>🔗 Kết nối ngay qua Zalo</h3>
             <div class="zalo-container">
                 <div class="qr-box">
-                    <img src="images/zalo-qr.png" alt="Zalo QR" class="qr-img">
+                    <img src="images/zalo-qr.png" alt="Zalo QR Code" class="qr-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZmZmIi8+CjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMDAwIi8+CjxyZWN0IHg9IjE0MCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzAwMCIvPgo8cmVjdCB4PSIyMCIgeT0iMTQwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9IiMwMDAiLz4KPHA+UVIgQ29kZSBmb3IgWmFsbzwvdGV4dD4KPC9zdmc+'">
                 </div>
                 <div class="zalo-info">
-                    <h4>Zalo Chat</h4>
-                    <p>Duy Anh</p>
+                    <h4><i class="fab fa-telegram"></i> Zalo Chat</h4>
+                    <p><strong>Duy Anh</strong></p>
                     <ol>
-                        <li>Mở ứng dụng Zalo</li>
-                        <li>Chọn "Quét mã QR"</li>
-                        <li>Hướng camera vào mã QR</li>
+                        <li>Mở ứng dụng Zalo trên điện thoại</li>
+                        <li>Chọn "Quét mã QR" từ menu</li>
+                        <li>Hướng camera vào mã QR bên cạnh</li>
+                        <li>Nhấn "Kết bạn" để bắt đầu trò chuyện</li>
                     </ol>
                     <div class="zalo-buttons">
-                        <a href="images/zalo-qr.png" download class="btn">Tải xuống QR</a>
-                        <a href="https://zalo.me/0798811749" target="_blank" class="btn">Mở Zalo</a>
+                        <a href="images/zalo-qr.png" download class="btn">
+                            <i class="fas fa-download"></i> Tải QR
+                        </a>
+                        <a href="https://zalo.me/0798811749" target="_blank" class="btn">
+                            <i class="fab fa-telegram"></i> Mở Zalo
+                        </a>
                     </div>
                 </div>
             </div>
@@ -89,54 +107,187 @@
     </section>
 
     <!-- Học tập & Hoạt động -->
-    <section id="timeline" class="section">
+    <section id="timeline" class="section fade-in">
         <h2>Học tập & Hoạt động</h2>
         <ul class="timeline">
-            <li><span>2022 - Nay</span> Sinh viên ngành CNTT - Đại học Đà Lạt</li>
-            <li><span>2023</span> Thành viên CLB Lập trình</li>
+            <li>
+                <span>2022 - Hiện tại</span>
+                <p>Sinh viên ngành Công nghệ Thông tin - Đại học Đà Lạt</p>
+            </li>
+            <li>
+                <span>2023</span>
+                <p>Thành viên tích cực của Câu lạc bộ Lập trình</p>
+            </li>
+            <li>
+                <span>2024</span>
+                <p>Tham gia các dự án phát triển web và ứng dụng di động</p>
+            </li>
         </ul>
     </section>
 
     <!-- Dự án -->
-    <section id="projects" class="section">
-        <h2>Dự án cá nhân</h2>
+    <section id="projects" class="section fade-in">
+        <h2>Dự án nổi bật</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Website Portfolio</h3>
-                <p>Trang web cá nhân giới thiệu bản thân và dự án.</p>
+                <h3><i class="fas fa-globe"></i> Website Portfolio</h3>
+                <p>Trang web cá nhân hiện đại với giao diện responsive, hiệu ứng động và tối ưu trải nghiệm người dùng.</p>
             </div>
             <div class="project-card">
-                <h3>Ứng dụng Quản lý Ghi chú</h3>
-                <p>App ghi chú đơn giản viết bằng JavaScript thuần.</p>
+                <h3><i class="fas fa-sticky-note"></i> Ứng dụng Quản lý Ghi chú</h3>
+                <p>Ứng dụng ghi chú thông minh với tính năng phân loại, tìm kiếm và đồng bộ hóa dữ liệu.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fas fa-mobile-alt"></i> App di động React Native</h3>
+                <p>Ứng dụng di động đa nền tảng với giao diện trực quan và hiệu suất cao.</p>
             </div>
         </div>
     </section>
 
     <!-- Kỹ năng -->
-    <section id="skills" class="section">
-        <h2>Kỹ năng</h2>
+    <section id="skills" class="section fade-in">
+        <h2>Kỹ năng chuyên môn</h2>
         <ul class="skills-list">
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java</li>
-            <li>Git, GitHub</li>
-            <li>Tiếng Anh giao tiếp</li>
+            <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+            <li><i class="fab fa-js-square"></i> JavaScript ES6+</li>
+            <li><i class="fab fa-react"></i> React.js</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+            <li><i class="fas fa-database"></i> SQL & NoSQL</li>
+            <li><i class="fas fa-language"></i> Tiếng Anh giao tiếp</li>
         </ul>
     </section>
 
     <!-- Liên hệ -->
-    <section id="contact" class="section contact">
-        <h2>Liên hệ</h2>
-        <p>Email: <a href="mailto:renbi1204@gmail.com">renbi1204@gmail.com</a></p>
-        <p>Điện thoại: 0798811749</p>
+    <section id="contact" class="section contact fade-in">
+        <h2>Liên hệ với tôi</h2>
+        <p>📧 Email: <a href="mailto:renbi1204@gmail.com">renbi1204@gmail.com</a></p>
+        <p>📱 Điện thoại: <a href="tel:0798811749">0798811749</a></p>
         <div class="social-links">
-            <a href="https://www.github.com/DuyAnh-code" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/map.2508" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/dii.enggg/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.github.com/DuyAnh-code" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/map.2508" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/dii.enggg/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://zalo.me/0798811749" target="_blank" title="Zalo">
+                <i class="fab fa-telegram"></i>
+            </a>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2025 Lê Bình Duy Anh. All rights reserved.</p>
+        <p>© 2025 Lê Bình Duy Anh. Designed with ❤️ & ☕</p>
     </footer>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random position and animation delay
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                
+                particles.appendChild(particle);
+            }
+        }
+
+        // Intersection Observer for fade-in animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.site-header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 10, 10, 0.98)';
+                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.3)';
+            } else {
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            
+            // Observe all fade-in elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Add hover effect to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add typing effect to hero title
+        function typeWriter(element, text, speed = 100) {
+            element.innerHTML = '';
+            let i = 0;
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Initialize typing effect
+        window.addEventListener('load', () => {
+            const heroTitle = document.querySelector('.hero h1');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 150);
+            }
+        });
+    </script>
 </body>
 </html>
